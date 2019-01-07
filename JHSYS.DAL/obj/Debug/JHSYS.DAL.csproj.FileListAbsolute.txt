@@ -1,0 +1,10 @@
+F:\资料\JHSYS(NEW)\JHSYS\JHSYS.DAL\bin\Debug\JHSYS.DAL.dll
+F:\资料\JHSYS(NEW)\JHSYS\JHSYS.DAL\bin\Debug\JHSYS.DAL.pdb
+F:\资料\JHSYS(NEW)\JHSYS\JHSYS.DAL\obj\Debug\JHSYS.DAL.csprojResolveAssemblyReference.cache
+F:\资料\JHSYS(NEW)\JHSYS\JHSYS.DAL\obj\Debug\JHSYS.DAL.dll
+F:\资料\JHSYS(NEW)\JHSYS\JHSYS.DAL\obj\Debug\JHSYS.DAL.pdb
+F:\资料\JHSYS(NEW)\JHSYS\JHSYS.DAL\bin\Debug\ApplicationInsights.config
+F:\资料\JHSYS(NEW)\JHSYS\JHSYS.DAL\bin\Debug\JHSYS.Code.dll
+F:\资料\JHSYS(NEW)\JHSYS\JHSYS.DAL\bin\Debug\Newtonsoft.Json.dll
+F:\资料\JHSYS(NEW)\JHSYS\JHSYS.DAL\bin\Debug\JHSYS.Code.pdb
+F:\资料\JHSYS(NEW)\JHSYS\JHSYS.DAL\bin\Debug\Newtonsoft.Json.xml

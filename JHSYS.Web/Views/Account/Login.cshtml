@@ -1,0 +1,131 @@
+﻿@model JHSYS.Web.Models.UserLoginViewModel
+
+<style>
+    body,p{
+        margin:0;
+        padding:0;
+    }
+    .content{
+        margin-top:100px;
+    }
+    h2{
+        text-align:center;
+    }
+    a{
+        color:blue;
+        cursor:pointer;
+        text-decoration:none;
+    }
+    a:hover{
+        color:black;
+    }
+    .editor-content{
+        width:300px;
+        padding:50px;
+        border-radius:6px;
+        height:auto;
+        margin:20px auto;
+        background-color:#F2F2F2;
+    }
+    input,input :focus{
+        background-color:#fff;
+    }
+    .editor-field input{
+        height:40px;
+        width:300px;
+        padding:0 20px 0 5px;
+        border:1px solid #eee;
+        border-radius:6px;
+        background-color:white;
+    }
+    .editor-field i{
+        position:relative;
+        top:-29px;
+        left:275px;
+        color:gray;
+    }
+    .editor-verify,editor-field{
+        position:relative;
+    }
+    .editor-verify input{
+        width:200px;
+        height:40px;
+        border:1px solid #eee;
+        border-radius:6px;
+        background-color:white;
+        padding:0 0 0 5px;
+    }
+    .editor-verify img{
+        height:25px;
+        width:80px;
+        position:absolute;
+        top:10px;
+        left:110px;
+    }
+    .submit-ok{
+        width:300px;
+        height:40px;
+        text-align:center;
+        background-color:#00ff21;
+        color:white;
+        border:none;
+        border-radius:6px;
+        margin:10px 0;
+        cursor:pointer;
+    }
+    .submit-ok:hover{
+        opacity:.8;
+    }
+</style>
+@using (Html.BeginForm())
+{
+    @Html.ValidationSummary(true)
+    <div class="content">
+        <h2>登录</h2>
+
+        <div class="editor-content">
+            <div class="editor-field">
+                @Html.TextBoxFor(model => model.email, new { data_val_email = "请输入 Email 地址" })<br />
+                <i class="fa fa-user-o"></i>
+            </div>
+
+
+            <div class="editor-field">
+                @Html.EditorFor(model => model.password)<br />
+                <i class="fa fa-key"></i>
+            </div>
+
+            <div class="editor-verify">
+                @Html.EditorFor(model => model.verify)
+                <span style="font-size:12px;">看不清？<a>换一张</a></span>
+                <img id="imgcode" class="authcode" src="~/Account/GetAuthCode" width="80" height="25" /><br />
+            </div>
+
+            <p>
+                <input type="submit" class="submit-ok" value="登入" />
+            </p>
+            <p style="color:red;">
+                @Html.ValidationMessageFor(model => model.email)
+                @Html.ValidationMessageFor(model => model.password)
+                @Html.ValidationMessageFor(model => model.verify)
+            </p>
+        </div>
+    </div>
+
+
+}
+
+@*<div>
+    @Html.ActionLink("返回首页", "Index", "Home")
+</div>*@
+<link href="~/Content/fa/css/font-awesome.min.css" rel="stylesheet" />
+
+@section Scripts {
+    @*@Scripts.Render("~/bundles/jqueryval@*")*@
+    @if (TempData["LastTempMessage"] != null)
+    {
+        <script>
+            alert('@HttpUtility.JavaScriptStringEncode(Convert.ToString(TempData["LastTempMessage"]))');
+        </script>
+    }
+}

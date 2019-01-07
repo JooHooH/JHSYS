@@ -1,0 +1,5 @@
+F:\资料\JHSYS(NEW)\JHSYS\JHSYS.Model\bin\Debug\JHSYS.Model.dll
+F:\资料\JHSYS(NEW)\JHSYS\JHSYS.Model\bin\Debug\JHSYS.Model.pdb
+F:\资料\JHSYS(NEW)\JHSYS\JHSYS.Model\obj\Debug\JHSYS.Model.csprojResolveAssemblyReference.cache
+F:\资料\JHSYS(NEW)\JHSYS\JHSYS.Model\obj\Debug\JHSYS.Model.dll
+F:\资料\JHSYS(NEW)\JHSYS\JHSYS.Model\obj\Debug\JHSYS.Model.pdb
